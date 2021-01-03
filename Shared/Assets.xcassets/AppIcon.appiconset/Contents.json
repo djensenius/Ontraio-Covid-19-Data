@@ -1,109 +1,109 @@
 {
   "images" : [
     {
-      "filename" : "virus-logo-Notification@2x ~ipad.png",
+      "filename" : "virus-black-Notification@2x-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "virus-logo-Notification@3x.png",
+      "filename" : "virus-black-Notification@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "virus-logo-Settings@2x.png",
+      "filename" : "virus-black-Settings@2x~ipad.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "virus-logo-Settings-Notification@3x~watch.png",
+      "filename" : "virus-black-Settings@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "virus-logo-Spotlight-40@2x.png",
+      "filename" : "virus-black-Spotlight-40@2x~ipad.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "virus-logo-Spotlight-40@3x.png",
+      "filename" : "virus-black-Spotlight-40@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "virus-logo-60@2x.png",
+      "filename" : "virus-black-60@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "virus-logo-60@3x.png",
+      "filename" : "virus-black-60@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "filename" : "virus-logo-Notification~ipad.png",
+      "filename" : "virus-black-Notification~ipad.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "20x20"
     },
     {
-      "filename" : "virus-logo-Spotlight-40~ipad.png",
+      "filename" : "virus-black-Spotlight-40~ipad.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "virus-logo-Settings~ipad.png",
+      "filename" : "virus-black-Settings~ipad.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "virus-logo-44-Settings-Notification@2x~watch.png",
+      "filename" : "virus-black-Settings@2x~ipad-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "virus-logo-Notification@2x ~ipad-1.png",
+      "filename" : "virus-black-Notification@2x.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
     },
     {
-      "filename" : "virus-logo-Spotlight-40@2x-1.png",
+      "filename" : "virus-black-Spotlight-40@2x~ipad-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "virus-logo-76~ipad.png",
+      "filename" : "virus-black-76~ipad.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
     },
     {
-      "filename" : "virus-logo-76@2x~ipad.png",
+      "filename" : "virus-black-76@2x~ipad.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
     },
     {
-      "filename" : "virus-logo-83.5@2x~ipad.png",
+      "filename" : "virus-black-83.5@2x~ipad.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "icon_512x512@2x.png",
+      "filename" : "virus-blackios~marketing.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
@@ -115,13 +115,13 @@
       "size" : "16x16"
     },
     {
-      "filename" : "icon_32x32-1.png",
+      "filename" : "icon_16x16@2x.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "16x16"
     },
     {
-      "filename" : "icon_32x32.png",
+      "filename" : "icon_16x16@2x-1.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
@@ -139,7 +139,7 @@
       "size" : "128x128"
     },
     {
-      "filename" : "icon_256x256-1.png",
+      "filename" : "icon_128x128@2x.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
@@ -151,7 +151,7 @@
       "size" : "256x256"
     },
     {
-      "filename" : "icon_512x512-1.png",
+      "filename" : "icon_256x256@2x.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"
@@ -163,7 +163,7 @@
       "size" : "512x512"
     },
     {
-      "filename" : "icon_512x512@2x-1.png",
+      "filename" : "icon_512x512@2x.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"
