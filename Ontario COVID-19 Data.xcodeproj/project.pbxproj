@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,12 @@
 		63E4B28A25A1223A0077CA3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B25F25A1222C0077CA3F /* ContentView.swift */; };
 		63E4B28B25A1223A0077CA3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E4B26025A122390077CA3F /* Assets.xcassets */; };
 		63E4B28C25A1223A0077CA3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E4B26025A122390077CA3F /* Assets.xcassets */; };
+		63E4B2A025A1224F0077CA3F /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B29F25A1224F0077CA3F /* Summary.swift */; };
+		63E4B2A125A1224F0077CA3F /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B29F25A1224F0077CA3F /* Summary.swift */; };
+		63E4B2AC25A12A780077CA3F /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 63E4B2AB25A12A780077CA3F /* SwiftCSV */; };
+		63E4B2B325A134040077CA3F /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 63E4B2B225A134040077CA3F /* SwiftCSV */; };
+		63F3DD9125A23B380076CCE3 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F3DD9025A23B380076CCE3 /* DescriptionView.swift */; };
+		63F3DD9225A23B380076CCE3 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F3DD9025A23B380076CCE3 /* DescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +44,9 @@
 		63E4B25E25A1222C0077CA3F /* COVID_Data_OntarioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVID_Data_OntarioApp.swift; sourceTree = "<group>"; };
 		63E4B25F25A1222C0077CA3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		63E4B26025A122390077CA3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		63E4B26525A1223A0077CA3F /* COVID Data Ontario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID Data Ontario.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E4B26525A1223A0077CA3F /* Ontario COVID-19 Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ontario COVID-19 Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E4B26825A1223A0077CA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63E4B26D25A1223A0077CA3F /* COVID Data Ontario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID Data Ontario.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E4B26D25A1223A0077CA3F /* Ontario COVID-19 Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ontario COVID-19 Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E4B26F25A1223A0077CA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E4B27025A1223A0077CA3F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		63E4B27525A1223A0077CA3F /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +55,9 @@
 		63E4B28025A1223A0077CA3F /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E4B28425A1223A0077CA3F /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		63E4B28625A1223A0077CA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E4B29F25A1224F0077CA3F /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		63F3DD9025A23B380076CCE3 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		63F3DD9F25A24B170076CCE3 /* Ontario COVID-19 Data.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ontario COVID-19 Data.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E4B2AC25A12A780077CA3F /* SwiftCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E4B2B325A134040077CA3F /* SwiftCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +97,14 @@
 		63E4B25825A1222B0077CA3F = {
 			isa = PBXGroup;
 			children = (
+				63F3DD9F25A24B170076CCE3 /* Ontario COVID-19 Data.entitlements */,
 				63E4B25D25A1222C0077CA3F /* Shared */,
 				63E4B26725A1223A0077CA3F /* iOS */,
 				63E4B26E25A1223A0077CA3F /* macOS */,
 				63E4B27825A1223A0077CA3F /* Tests iOS */,
 				63E4B28325A1223A0077CA3F /* Tests macOS */,
 				63E4B26625A1223A0077CA3F /* Products */,
+				63E4B2B125A134040077CA3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +113,8 @@
 			children = (
 				63E4B25E25A1222C0077CA3F /* COVID_Data_OntarioApp.swift */,
 				63E4B25F25A1222C0077CA3F /* ContentView.swift */,
+				63F3DD9025A23B380076CCE3 /* DescriptionView.swift */,
+				63E4B29F25A1224F0077CA3F /* Summary.swift */,
 				63E4B26025A122390077CA3F /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -108,8 +123,8 @@
 		63E4B26625A1223A0077CA3F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63E4B26525A1223A0077CA3F /* COVID Data Ontario.app */,
-				63E4B26D25A1223A0077CA3F /* COVID Data Ontario.app */,
+				63E4B26525A1223A0077CA3F /* Ontario COVID-19 Data.app */,
+				63E4B26D25A1223A0077CA3F /* Ontario COVID-19 Data.app */,
 				63E4B27525A1223A0077CA3F /* Tests iOS.xctest */,
 				63E4B28025A1223A0077CA3F /* Tests macOS.xctest */,
 			);
@@ -151,12 +166,19 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		63E4B2B125A134040077CA3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		63E4B26425A1223A0077CA3F /* COVID Data Ontario (iOS) */ = {
+		63E4B26425A1223A0077CA3F /* Ontario COVID-19 Data (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63E4B28F25A1223A0077CA3F /* Build configuration list for PBXNativeTarget "COVID Data Ontario (iOS)" */;
+			buildConfigurationList = 63E4B28F25A1223A0077CA3F /* Build configuration list for PBXNativeTarget "Ontario COVID-19 Data (iOS)" */;
 			buildPhases = (
 				63E4B26125A1223A0077CA3F /* Sources */,
 				63E4B26225A1223A0077CA3F /* Frameworks */,
@@ -166,14 +188,17 @@
 			);
 			dependencies = (
 			);
-			name = "COVID Data Ontario (iOS)";
+			name = "Ontario COVID-19 Data (iOS)";
+			packageProductDependencies = (
+				63E4B2AB25A12A780077CA3F /* SwiftCSV */,
+			);
 			productName = "COVID Data Ontario (iOS)";
-			productReference = 63E4B26525A1223A0077CA3F /* COVID Data Ontario.app */;
+			productReference = 63E4B26525A1223A0077CA3F /* Ontario COVID-19 Data.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63E4B26C25A1223A0077CA3F /* COVID Data Ontario (macOS) */ = {
+		63E4B26C25A1223A0077CA3F /* Ontario COVID-19 Data (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63E4B29225A1223A0077CA3F /* Build configuration list for PBXNativeTarget "COVID Data Ontario (macOS)" */;
+			buildConfigurationList = 63E4B29225A1223A0077CA3F /* Build configuration list for PBXNativeTarget "Ontario COVID-19 Data (macOS)" */;
 			buildPhases = (
 				63E4B26925A1223A0077CA3F /* Sources */,
 				63E4B26A25A1223A0077CA3F /* Frameworks */,
@@ -183,9 +208,12 @@
 			);
 			dependencies = (
 			);
-			name = "COVID Data Ontario (macOS)";
+			name = "Ontario COVID-19 Data (macOS)";
+			packageProductDependencies = (
+				63E4B2B225A134040077CA3F /* SwiftCSV */,
+			);
 			productName = "COVID Data Ontario (macOS)";
-			productReference = 63E4B26D25A1223A0077CA3F /* COVID Data Ontario.app */;
+			productReference = 63E4B26D25A1223A0077CA3F /* Ontario COVID-19 Data.app */;
 			productType = "com.apple.product-type.application";
 		};
 		63E4B27425A1223A0077CA3F /* Tests iOS */ = {
@@ -249,7 +277,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 63E4B25C25A1222B0077CA3F /* Build configuration list for PBXProject "COVID Data Ontario" */;
+			buildConfigurationList = 63E4B25C25A1222B0077CA3F /* Build configuration list for PBXProject "Ontario COVID-19 Data" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -258,12 +286,15 @@
 				Base,
 			);
 			mainGroup = 63E4B25825A1222B0077CA3F;
+			packageReferences = (
+				63E4B2AA25A12A780077CA3F /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+			);
 			productRefGroup = 63E4B26625A1223A0077CA3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				63E4B26425A1223A0077CA3F /* COVID Data Ontario (iOS) */,
-				63E4B26C25A1223A0077CA3F /* COVID Data Ontario (macOS) */,
+				63E4B26425A1223A0077CA3F /* Ontario COVID-19 Data (iOS) */,
+				63E4B26C25A1223A0077CA3F /* Ontario COVID-19 Data (macOS) */,
 				63E4B27425A1223A0077CA3F /* Tests iOS */,
 				63E4B27F25A1223A0077CA3F /* Tests macOS */,
 			);
@@ -309,7 +340,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E4B28925A1223A0077CA3F /* ContentView.swift in Sources */,
+				63E4B2A025A1224F0077CA3F /* Summary.swift in Sources */,
 				63E4B28725A1223A0077CA3F /* COVID_Data_OntarioApp.swift in Sources */,
+				63F3DD9125A23B380076CCE3 /* DescriptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +351,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E4B28A25A1223A0077CA3F /* ContentView.swift in Sources */,
+				63E4B2A125A1224F0077CA3F /* Summary.swift in Sources */,
 				63E4B28825A1223A0077CA3F /* COVID_Data_OntarioApp.swift in Sources */,
+				63F3DD9225A23B380076CCE3 /* DescriptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,12 +378,12 @@
 /* Begin PBXTargetDependency section */
 		63E4B27725A1223A0077CA3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 63E4B26425A1223A0077CA3F /* COVID Data Ontario (iOS) */;
+			target = 63E4B26425A1223A0077CA3F /* Ontario COVID-19 Data (iOS) */;
 			targetProxy = 63E4B27625A1223A0077CA3F /* PBXContainerItemProxy */;
 		};
 		63E4B28225A1223A0077CA3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 63E4B26C25A1223A0077CA3F /* COVID Data Ontario (macOS) */;
+			target = 63E4B26C25A1223A0077CA3F /* Ontario COVID-19 Data (macOS) */;
 			targetProxy = 63E4B28125A1223A0077CA3F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -470,6 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Ontario COVID-19 Data.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9JALHNGRBQ;
 				ENABLE_PREVIEWS = YES;
@@ -480,8 +516,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.davidjensenius.COVID-Data-Ontario";
-				PRODUCT_NAME = "COVID Data Ontario";
+				PRODUCT_NAME = "Ontario COVID-19 Data";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -492,6 +529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Ontario COVID-19 Data.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9JALHNGRBQ;
 				ENABLE_PREVIEWS = YES;
@@ -502,8 +540,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.davidjensenius.COVID-Data-Ontario";
-				PRODUCT_NAME = "COVID Data Ontario";
+				PRODUCT_NAME = "Ontario COVID-19 Data";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -528,7 +567,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.davidjensenius.COVID-Data-Ontario";
-				PRODUCT_NAME = "COVID Data Ontario";
+				PRODUCT_NAME = "Ontario COVID-19 Data";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -552,7 +591,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.davidjensenius.COVID-Data-Ontario";
-				PRODUCT_NAME = "COVID Data Ontario";
+				PRODUCT_NAME = "Ontario COVID-19 Data";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -650,7 +689,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		63E4B25C25A1222B0077CA3F /* Build configuration list for PBXProject "COVID Data Ontario" */ = {
+		63E4B25C25A1222B0077CA3F /* Build configuration list for PBXProject "Ontario COVID-19 Data" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63E4B28D25A1223A0077CA3F /* Debug */,
@@ -659,7 +698,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63E4B28F25A1223A0077CA3F /* Build configuration list for PBXNativeTarget "COVID Data Ontario (iOS)" */ = {
+		63E4B28F25A1223A0077CA3F /* Build configuration list for PBXNativeTarget "Ontario COVID-19 Data (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63E4B29025A1223A0077CA3F /* Debug */,
@@ -668,7 +707,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63E4B29225A1223A0077CA3F /* Build configuration list for PBXNativeTarget "COVID Data Ontario (macOS)" */ = {
+		63E4B29225A1223A0077CA3F /* Build configuration list for PBXNativeTarget "Ontario COVID-19 Data (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63E4B29325A1223A0077CA3F /* Debug */,
@@ -696,6 +735,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63E4B2AA25A12A780077CA3F /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63E4B2AB25A12A780077CA3F /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63E4B2AA25A12A780077CA3F /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+		63E4B2B225A134040077CA3F /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63E4B2AA25A12A780077CA3F /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63E4B25925A1222B0077CA3F /* Project object */;
 }
