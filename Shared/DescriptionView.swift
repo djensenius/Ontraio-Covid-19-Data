@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct DescriptionView: View {
-    var summary: SummaryData
+    @EnvironmentObject var summary: SummaryData
+
     var body: some View {
         VStack(alignment: .trailing) {
             HStack {
@@ -50,6 +51,6 @@ struct DescriptionView: View {
 
 struct DescriptionView_Previews: PreviewProvider {
     static var previews: some View {
-        DescriptionView(summary: SummaryData.init())
+        DescriptionView()
     }
 }

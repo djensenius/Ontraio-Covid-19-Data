@@ -488,6 +488,7 @@ class SummaryData: ObservableObject {
     @Published var lastUpdated: Date?
 
     func fetchData() {
+        print("Fetching data");
         guard let url = URL(
                 string:"https://data.ontario.ca/api/3/action/package_show?id=status-of-covid-19-cases-in-ontario"
         ) else {
@@ -503,7 +504,8 @@ class SummaryData: ObservableObject {
                         self.grabCSVs(summary: decodedResponse)
                         let dateFormatter = DateFormatter()
                         dateFormatter.dateFormat = "yyyy-MM-dd"
-                        self.lastChecked = dateFormatter.date(from: decodedResponse.result.resources[0].dataLastUpdated ?? "2021-01-01")
+                        self.lastUpdated = dateFormatter.date(from: decodedResponse.result.resources[0].dataLastUpdated ?? "2021-01-01")
+                        self.lastChecked = Date()
                     }
                 }
             }

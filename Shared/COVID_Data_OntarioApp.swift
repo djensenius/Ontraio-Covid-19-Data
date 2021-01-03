@@ -9,15 +9,17 @@ import SwiftUI
 
 @main
 struct COVID_Data_OntarioApp: App {
-    @ObservedObject var summary = SummaryData.init()
-    
+    let summary = SummaryData()
+
     var body: some Scene {
         WindowGroup {
             VStack {
-                DescriptionView(summary: summary)
-                ContentView(summary: summary)
+                DescriptionView()
+                    .environmentObject(summary)
+                ContentView()
                     .padding(.bottom)
             }
+            .environmentObject(summary)
             .onAppear(perform: {
                 summary.fetchData()
                 let _ = updateTimer

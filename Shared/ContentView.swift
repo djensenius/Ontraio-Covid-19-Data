@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var summary: SummaryData
+    @EnvironmentObject var summary: SummaryData
 
     var gridItemLayout = [GridItem(.flexible())]
     var body: some View {
