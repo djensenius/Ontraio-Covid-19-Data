@@ -52,10 +52,10 @@ struct ContentView: View {
                     }
                 }
                 LazyVGrid(columns: doubleGridItemLayout, spacing: 5) {
-                    if summary.dataForCharts != nil {
-                        ForEach (summary.dataForCharts!, id: \.name) { chart in
+                    if summary.dataForLineCharts != nil {
+                        ForEach (summary.dataForLineCharts!, id: \.name) { chart in
                             if (chart.name != "Reported Date" && chart.name != "Presumptive Negative" && chart.name != "Presumptive Positive") {
-                                BarChartView(data: ChartData(values: chart.data), title: chart.name, form: ChartForm.extraLarge)
+                                LineChartView(data: chart.data, title: chart.name, form: ChartForm.extraLarge, dropShadow: false)
                             }
                         }
                     }
