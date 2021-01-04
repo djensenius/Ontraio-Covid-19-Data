@@ -6,38 +6,56 @@
 //
 
 import SwiftUI
+import SwiftUICharts
 
 struct ContentView: View {
     @EnvironmentObject var summary: SummaryData
 
     var gridItemLayout = [GridItem(.flexible())]
+    #if targetEnvironment(macCatalyst)
+    var doubleGridItemLayout = [GridItem(.flexible()), GridItem(.flexible())]
+    #else
+    var doubleGridItemLayout = [GridItem(.flexible())]
+    #endif
+
     var body: some View {
-        VStack {
-            LazyVGrid(columns: gridItemLayout, spacing: 5) {
-                ForEach((0..<6), id: \.self) { i in
-                    HStack {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 15, style: .continuous)
-                                .fill(Color(UIColor.systemGray6))
-                            HStack {
-                                VStack(alignment: .leading) {
-                                    HStack {
-                                        Text(getName(i: i))
-                                            .font(.title2)
-                                            .padding(.leading)
-                                        Spacer()
+        ScrollView {
+            VStack {
+                LazyVGrid(columns: gridItemLayout, spacing: 5) {
+                    ForEach((0..<6), id: \.self) { i in
+                        HStack {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 15, style: .continuous)
+                                    .fill(Color(UIColor.systemGray6))
+                                HStack {
+                                    VStack(alignment: .leading) {
+                                        HStack {
+                                            Text(getName(i: i))
+                                                .font(.title2)
+                                                .padding(.leading)
+                                            Spacer()
+                                        }
+                                        HStack {
+                                            Text(getDirection(i: i))
+                                                .font(.subheadline)
+                                                .padding(.leading)
+                                            Text(getChange(i: i))
+                                                .font(.subheadline)
+                                        }
                                     }
-                                    HStack {
-                                        Text(getDirection(i: i))
-                                            .font(.subheadline)
-                                            .padding(.leading)
-                                        Text(getChange(i: i))
-                                            .font(.subheadline)
-                                    }
+                                    Text(getNumber(i: i))
+                                        .font(.title)
+                                        .padding()
                                 }
-                                Text(getNumber(i: i))
-                                    .font(.title)
-                                    .padding()
+                            }
+                        }
+                    }
+                }
+                LazyVGrid(columns: doubleGridItemLayout, spacing: 5) {
+                    if summary.dataForCharts != nil {
+                        ForEach (summary.dataForCharts!, id: \.name) { chart in
+                            if (chart.name != "Reported Date" && chart.name != "Presumptive Negative" && chart.name != "Presumptive Positive") {
+                                BarChartView(data: ChartData(values: chart.data), title: chart.name, form: ChartForm.extraLarge)
                             }
                         }
                     }

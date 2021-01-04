@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63425BE825A282BA0002592A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 63425BE725A282BA0002592A /* SwiftUICharts */; };
 		63E4B27A25A1223A0077CA3F /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B27925A1223A0077CA3F /* Tests_iOS.swift */; };
 		63E4B28525A1223A0077CA3F /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B28425A1223A0077CA3F /* Tests_macOS.swift */; };
 		63E4B28725A1223A0077CA3F /* COVID_Data_OntarioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B25E25A1222C0077CA3F /* COVID_Data_OntarioApp.swift */; };
@@ -66,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E4B2AC25A12A780077CA3F /* SwiftCSV in Frameworks */,
+				63425BE825A282BA0002592A /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +193,7 @@
 			name = "Ontario COVID-19 Data (iOS)";
 			packageProductDependencies = (
 				63E4B2AB25A12A780077CA3F /* SwiftCSV */,
+				63425BE725A282BA0002592A /* SwiftUICharts */,
 			);
 			productName = "COVID Data Ontario (iOS)";
 			productReference = 63E4B26525A1223A0077CA3F /* Ontario COVID-19 Data.app */;
@@ -288,6 +291,7 @@
 			mainGroup = 63E4B25825A1222B0077CA3F;
 			packageReferences = (
 				63E4B2AA25A12A780077CA3F /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+				63425BE625A282BA0002592A /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 63E4B26625A1223A0077CA3F /* Products */;
 			projectDirPath = "";
@@ -737,6 +741,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		63425BE625A282BA0002592A /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
 		63E4B2AA25A12A780077CA3F /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/swiftcsv/SwiftCSV";
@@ -748,6 +760,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		63425BE725A282BA0002592A /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63425BE625A282BA0002592A /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
 		63E4B2AB25A12A780077CA3F /* SwiftCSV */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 63E4B2AA25A12A780077CA3F /* XCRemoteSwiftPackageReference "SwiftCSV" */;

@@ -479,6 +479,21 @@ struct SummaryHighlight {
     let change: Int?;
 }
 
+struct SummaryHighlightOverview {
+    let date: Date?
+    let highlights: [SummaryHighlight]
+}
+
+struct ChartDatas {
+    let number: Int?
+    let date: Date?
+}
+
+struct Chart {
+    let name: String
+    let data: [(String, Double)]
+}
+
 class SummaryData: ObservableObject {
     @Published var summaryData: Summary?
     @Published var today: SummaryDay?
@@ -486,6 +501,8 @@ class SummaryData: ObservableObject {
     @Published var highlights: [SummaryHighlight]?
     @Published var lastChecked: Date?
     @Published var lastUpdated: Date?
+    @Published var daily: [SummaryHighlightOverview]?
+    @Published var dataForCharts: [Chart]?
 
     func fetchData() {
         print("Fetching data");
@@ -513,6 +530,9 @@ class SummaryData: ObservableObject {
     }
 
     func grabCSVs(summary: Summary) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+
         for resource in summary.result.resources {
             if resource.type == "data" && resource.format == "CSV" {
                 if resource.name == "Status of COVID-19 cases in Ontario" {
@@ -522,12 +542,32 @@ class SummaryData: ObservableObject {
                                 do {
                                     let s = String(data: data, encoding: .utf8)
                                     let csv: CSV = try CSV(string: s!)
+                                    var dailySummary: [SummaryHighlightOverview] = []
+                                    var allTheCharts: [Chart] = []
+                                    for c in csv.namedRows {
+                                        let day = self.parseCSVDay(csv: c)
+                                        let sum = SummaryHighlightOverview(date: day.reportedDate, highlights: self.generateHighlights(today: day, yesterday: day))
+                                        dailySummary.append(sum)
+                                    }
+
+                                    for c in csv.namedColumns {
+                                        var numberArray: [(String, Double)] = []
+                                        for (i, e) in c.value.enumerated() {
+                                            if e != "" {
+                                                let lData = (csv.namedColumns["Reported Date"]![i] , Double(e) ?? 0)
+                                                numberArray.append(lData)
+                                            }
+                                        }
+                                        allTheCharts.append(Chart(name: c.key, data: numberArray))
+                                    }
                                     DispatchQueue.main.async {
                                         let today = self.parseCSVDay(csv: csv.namedRows.last!)
                                         let yesterday = self.parseCSVDay(csv: csv.namedRows[csv.namedRows.count - 2])
                                         self.today = today
                                         self.yesterday = yesterday
                                         self.highlights = self.generateHighlights(today: today, yesterday: yesterday)
+                                        self.daily = dailySummary
+                                        self.dataForCharts = allTheCharts
                                     }
                                 } catch {
                                     print("Parse error")
