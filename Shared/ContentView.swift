@@ -13,7 +13,7 @@ struct ContentView: View {
 
     var gridItemLayout = [GridItem(.flexible())]
     #if targetEnvironment(macCatalyst)
-    var doubleGridItemLayout = [GridItem(.flexible()), GridItem(.flexible())]
+    var doubleGridItemLayout = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     #else
     var doubleGridItemLayout = [GridItem(.flexible())]
     #endif
@@ -52,14 +52,23 @@ struct ContentView: View {
                     }
                 }
                 LazyVGrid(columns: doubleGridItemLayout, spacing: 5) {
-                    if summary.dataForLineCharts != nil {
-                        ForEach (summary.dataForLineCharts!, id: \.name) { chart in
+                    if summary.dataForCharts != nil {
+                        ForEach (summary.dataForCharts!, id: \.name) { chart in
                             if (chart.name != "Reported Date" && chart.name != "Presumptive Negative" && chart.name != "Presumptive Positive") {
-                                LineChartView(data: chart.data, title: chart.name, form: ChartForm.extraLarge, dropShadow: false)
+                                BarChartView(data: ChartData(values: chart.data), title: chart.name, form: ChartForm.extraLarge, dropShadow: false)
                             }
                         }
                     }
                 }
+//                LazyVGrid(columns: doubleGridItemLayout, spacing: 5) {
+//                    if summary.dataForLineCharts != nil {
+//                        ForEach (summary.dataForLineCharts!, id: \.name) { chart in
+//                            if (chart.name != "Reported Date" && chart.name != "Presumptive Negative" && chart.name != "Presumptive Positive") {
+//                                LineChartView(data: chart.data, title: chart.name, form: ChartForm.extraLarge, dropShadow: false)
+//                            }
+//                        }
+//                    }
+//                }
             }
         }
     }
