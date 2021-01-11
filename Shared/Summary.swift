@@ -510,6 +510,14 @@ class SummaryData: ObservableObject {
     @Published var dataForCharts: [Chart]?
     @Published var dataForLineCharts: [LineChart]?
 
+    @Published var regionSummaryData: Summary?
+    @Published var regionToday: SummaryDay?
+    @Published var regionYesterday: SummaryDay?
+    @Published var regionHighlights: [SummaryHighlight]?
+    @Published var regionDaily: [SummaryHighlightOverview]?
+    @Published var regionDataForCharts: [Chart]?
+    @Published var regionDataForLineCharts: [LineChart]?
+
     func fetchData() {
         print("Fetching data");
         guard let url = URL(
@@ -587,8 +595,6 @@ class SummaryData: ObservableObject {
                             }
                         }
                     }
-                } else if resource.name == "Daily change in cases by PHU" {
-
                 }
             }
         }

@@ -9,27 +9,9 @@ import SwiftUI
 
 @main
 struct COVID_Data_OntarioApp: App {
-    let summary = SummaryData()
-
     var body: some Scene {
         WindowGroup {
-            VStack {
-                DescriptionView()
-                    .environmentObject(summary)
-                ContentView()
-                    .padding(.bottom)
-            }
-            .environmentObject(summary)
-            .onAppear(perform: {
-                summary.fetchData()
-                let _ = updateTimer
-            })
+            AppNavigationView()
         }
-    }
-    var updateTimer: Timer {
-        Timer.scheduledTimer(withTimeInterval: 60, repeats: true,
-                             block: {_ in
-                                summary.fetchData()
-                             })
     }
 }

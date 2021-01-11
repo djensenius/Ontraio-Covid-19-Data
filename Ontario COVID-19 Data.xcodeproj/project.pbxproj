@@ -8,12 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		63425BE825A282BA0002592A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 63425BE725A282BA0002592A /* SwiftUICharts */; };
+		634E0B1A25AB551C003A719A /* ProvinceContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E0B1925AB551C003A719A /* ProvinceContentView.swift */; };
+		634E0B1B25AB551C003A719A /* ProvinceContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E0B1925AB551C003A719A /* ProvinceContentView.swift */; };
+		634E0B2925AB5A70003A719A /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E0B2825AB5A70003A719A /* AppNavigationView.swift */; };
+		634E0B2A25AB5A70003A719A /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E0B2825AB5A70003A719A /* AppNavigationView.swift */; };
+		634E0B3825AB6E30003A719A /* NavigationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E0B3725AB6E30003A719A /* NavigationRow.swift */; };
+		634E0B3925AB6E30003A719A /* NavigationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E0B3725AB6E30003A719A /* NavigationRow.swift */; };
+		634E0B3F25AB9095003A719A /* CountrySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E0B3E25AB9095003A719A /* CountrySummary.swift */; };
+		634E0B4025AB9095003A719A /* CountrySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E0B3E25AB9095003A719A /* CountrySummary.swift */; };
+		634E0B4625ABBBC2003A719A /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E0B4525ABBBC2003A719A /* CountryView.swift */; };
+		634E0B4725ABBBC2003A719A /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E0B4525ABBBC2003A719A /* CountryView.swift */; };
+		634E0B4D25ABBC34003A719A /* CountryDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E0B4C25ABBC34003A719A /* CountryDescriptionView.swift */; };
+		634E0B4E25ABBC34003A719A /* CountryDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E0B4C25ABBC34003A719A /* CountryDescriptionView.swift */; };
+		634E0B5425ABBCD5003A719A /* CountryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E0B5325ABBCD5003A719A /* CountryContentView.swift */; };
+		634E0B5525ABBCD5003A719A /* CountryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E0B5325ABBCD5003A719A /* CountryContentView.swift */; };
+		635650A725ABDCE000E346A8 /* RegionSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635650A625ABDCE000E346A8 /* RegionSummary.swift */; };
+		635650A825ABDCE000E346A8 /* RegionSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635650A625ABDCE000E346A8 /* RegionSummary.swift */; };
+		635650AE25ABE02200E346A8 /* RegionDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635650AD25ABE02200E346A8 /* RegionDescriptionView.swift */; };
+		635650AF25ABE02200E346A8 /* RegionDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635650AD25ABE02200E346A8 /* RegionDescriptionView.swift */; };
+		635650B525ABE06100E346A8 /* RegionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635650B425ABE06100E346A8 /* RegionContentView.swift */; };
+		635650B625ABE06100E346A8 /* RegionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635650B425ABE06100E346A8 /* RegionContentView.swift */; };
+		635650BC25ABE0AE00E346A8 /* RegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635650BB25ABE0AE00E346A8 /* RegionView.swift */; };
+		635650BD25ABE0AE00E346A8 /* RegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635650BB25ABE0AE00E346A8 /* RegionView.swift */; };
 		63E4B27A25A1223A0077CA3F /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B27925A1223A0077CA3F /* Tests_iOS.swift */; };
 		63E4B28525A1223A0077CA3F /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B28425A1223A0077CA3F /* Tests_macOS.swift */; };
 		63E4B28725A1223A0077CA3F /* COVID_Data_OntarioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B25E25A1222C0077CA3F /* COVID_Data_OntarioApp.swift */; };
 		63E4B28825A1223A0077CA3F /* COVID_Data_OntarioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B25E25A1222C0077CA3F /* COVID_Data_OntarioApp.swift */; };
-		63E4B28925A1223A0077CA3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B25F25A1222C0077CA3F /* ContentView.swift */; };
-		63E4B28A25A1223A0077CA3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B25F25A1222C0077CA3F /* ContentView.swift */; };
+		63E4B28925A1223A0077CA3F /* ProvinceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B25F25A1222C0077CA3F /* ProvinceView.swift */; };
+		63E4B28A25A1223A0077CA3F /* ProvinceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B25F25A1222C0077CA3F /* ProvinceView.swift */; };
 		63E4B28B25A1223A0077CA3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E4B26025A122390077CA3F /* Assets.xcassets */; };
 		63E4B28C25A1223A0077CA3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E4B26025A122390077CA3F /* Assets.xcassets */; };
 		63E4B2A025A1224F0077CA3F /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B29F25A1224F0077CA3F /* Summary.swift */; };
@@ -42,8 +64,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		634E0B1925AB551C003A719A /* ProvinceContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceContentView.swift; sourceTree = "<group>"; };
+		634E0B2825AB5A70003A719A /* AppNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; };
+		634E0B3725AB6E30003A719A /* NavigationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRow.swift; sourceTree = "<group>"; };
+		634E0B3E25AB9095003A719A /* CountrySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySummary.swift; sourceTree = "<group>"; };
+		634E0B4525ABBBC2003A719A /* CountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryView.swift; sourceTree = "<group>"; };
+		634E0B4C25ABBC34003A719A /* CountryDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDescriptionView.swift; sourceTree = "<group>"; };
+		634E0B5325ABBCD5003A719A /* CountryContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryContentView.swift; sourceTree = "<group>"; };
+		635650A625ABDCE000E346A8 /* RegionSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionSummary.swift; sourceTree = "<group>"; };
+		635650AD25ABE02200E346A8 /* RegionDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDescriptionView.swift; sourceTree = "<group>"; };
+		635650B425ABE06100E346A8 /* RegionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionContentView.swift; sourceTree = "<group>"; };
+		635650BB25ABE0AE00E346A8 /* RegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionView.swift; sourceTree = "<group>"; };
 		63E4B25E25A1222C0077CA3F /* COVID_Data_OntarioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVID_Data_OntarioApp.swift; sourceTree = "<group>"; };
-		63E4B25F25A1222C0077CA3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63E4B25F25A1222C0077CA3F /* ProvinceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceView.swift; sourceTree = "<group>"; };
 		63E4B26025A122390077CA3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63E4B26525A1223A0077CA3F /* Ontario COVID-19 Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ontario COVID-19 Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E4B26825A1223A0077CA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,10 +146,21 @@
 		63E4B25D25A1222C0077CA3F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				634E0B2825AB5A70003A719A /* AppNavigationView.swift */,
+				634E0B3725AB6E30003A719A /* NavigationRow.swift */,
 				63E4B25E25A1222C0077CA3F /* COVID_Data_OntarioApp.swift */,
-				63E4B25F25A1222C0077CA3F /* ContentView.swift */,
+				63E4B25F25A1222C0077CA3F /* ProvinceView.swift */,
+				635650BB25ABE0AE00E346A8 /* RegionView.swift */,
+				634E0B4525ABBBC2003A719A /* CountryView.swift */,
+				634E0B4C25ABBC34003A719A /* CountryDescriptionView.swift */,
+				635650AD25ABE02200E346A8 /* RegionDescriptionView.swift */,
 				63F3DD9025A23B380076CCE3 /* DescriptionView.swift */,
+				634E0B1925AB551C003A719A /* ProvinceContentView.swift */,
+				635650B425ABE06100E346A8 /* RegionContentView.swift */,
+				634E0B5325ABBCD5003A719A /* CountryContentView.swift */,
 				63E4B29F25A1224F0077CA3F /* Summary.swift */,
+				634E0B3E25AB9095003A719A /* CountrySummary.swift */,
+				635650A625ABDCE000E346A8 /* RegionSummary.swift */,
 				63E4B26025A122390077CA3F /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -343,9 +387,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E4B28925A1223A0077CA3F /* ContentView.swift in Sources */,
+				635650A725ABDCE000E346A8 /* RegionSummary.swift in Sources */,
+				63E4B28925A1223A0077CA3F /* ProvinceView.swift in Sources */,
+				634E0B3F25AB9095003A719A /* CountrySummary.swift in Sources */,
+				635650AE25ABE02200E346A8 /* RegionDescriptionView.swift in Sources */,
+				635650B525ABE06100E346A8 /* RegionContentView.swift in Sources */,
+				634E0B3825AB6E30003A719A /* NavigationRow.swift in Sources */,
+				634E0B4625ABBBC2003A719A /* CountryView.swift in Sources */,
 				63E4B2A025A1224F0077CA3F /* Summary.swift in Sources */,
 				63E4B28725A1223A0077CA3F /* COVID_Data_OntarioApp.swift in Sources */,
+				634E0B1A25AB551C003A719A /* ProvinceContentView.swift in Sources */,
+				634E0B5425ABBCD5003A719A /* CountryContentView.swift in Sources */,
+				634E0B2925AB5A70003A719A /* AppNavigationView.swift in Sources */,
+				635650BC25ABE0AE00E346A8 /* RegionView.swift in Sources */,
+				634E0B4D25ABBC34003A719A /* CountryDescriptionView.swift in Sources */,
 				63F3DD9125A23B380076CCE3 /* DescriptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,9 +409,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E4B28A25A1223A0077CA3F /* ContentView.swift in Sources */,
+				635650A825ABDCE000E346A8 /* RegionSummary.swift in Sources */,
+				63E4B28A25A1223A0077CA3F /* ProvinceView.swift in Sources */,
+				634E0B4025AB9095003A719A /* CountrySummary.swift in Sources */,
+				635650AF25ABE02200E346A8 /* RegionDescriptionView.swift in Sources */,
+				635650B625ABE06100E346A8 /* RegionContentView.swift in Sources */,
+				634E0B3925AB6E30003A719A /* NavigationRow.swift in Sources */,
+				634E0B4725ABBBC2003A719A /* CountryView.swift in Sources */,
 				63E4B2A125A1224F0077CA3F /* Summary.swift in Sources */,
 				63E4B28825A1223A0077CA3F /* COVID_Data_OntarioApp.swift in Sources */,
+				634E0B1B25AB551C003A719A /* ProvinceContentView.swift in Sources */,
+				634E0B5525ABBCD5003A719A /* CountryContentView.swift in Sources */,
+				634E0B2A25AB5A70003A719A /* AppNavigationView.swift in Sources */,
+				635650BD25ABE0AE00E346A8 /* RegionView.swift in Sources */,
+				634E0B4E25ABBC34003A719A /* CountryDescriptionView.swift in Sources */,
 				63F3DD9225A23B380076CCE3 /* DescriptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
